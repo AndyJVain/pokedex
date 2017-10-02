@@ -22,6 +22,7 @@
 		A1D3D2431F81BF5200B5C530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D3D2461F81BF5200B5C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1D3D2481F81BF5200B5C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D3D24E1F82A4E300B5C530 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 				A1D3D23E1F81BF5200B5C530 /* ViewController.swift */,
 				A1D3D2401F81BF5200B5C530 /* Main.storyboard */,
 				A1D3D2431F81BF5200B5C530 /* Assets.xcassets */,
+				A1D3D24E1F82A4E300B5C530 /* pokemon.csv */,
 				A1D3D2451F81BF5200B5C530 /* LaunchScreen.storyboard */,
 				A1D3D2481F81BF5200B5C530 /* Info.plist */,
 			);
