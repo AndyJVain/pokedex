@@ -27,7 +27,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         searchBar.delegate = self
         
         searchBar.returnKeyType = UIReturnKeyType.done
-        
         parsePokemonCSV()
         initAudio()
     }
@@ -49,8 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         do {
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
-            print(rows)
-            
+
             for row in rows {
                 let pokeId = Int(row["id"]!)!
                 let name = row["identifier"]!
@@ -63,7 +61,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
-    // Dequeue's the cells and sets them up
+    // Dequeues the cells and sets them up
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             let poke: Pokemon!
@@ -134,7 +132,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             view.endEditing(true)
         } else {
             inSearchMode = true
-            
             let lower = searchBar.text!.lowercased()
             filteredPokemon = pokemon.filter({$0.name.range(of: lower) != nil})
             collection.reloadData()
